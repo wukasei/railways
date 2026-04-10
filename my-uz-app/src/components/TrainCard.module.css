@@ -1,0 +1,66 @@
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px; /* даємо картці стабільну висоту */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  border-color: #005ebb;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.trainNumber {
+  color: #005ebb;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.route h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+.footer {
+  margin-top: auto; /* виштовхує низ картки максимально вниз */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 20px;
+  border-top: 1px solid #f3f4f6; /* тонка лінія для розділення */
+}
+.departureTime {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.bookingBtn {
+  background-color: #005ebb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.bookingBtn:hover {
+  background-color: #004488;
+}

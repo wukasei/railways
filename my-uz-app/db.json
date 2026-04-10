@@ -1,0 +1,47 @@
+{
+  "trains": [
+    {
+      "id": "741",
+      "number": "741К",
+      "from": "Київ",
+      "to": "Львів",
+      "departure": "2026-04-15T06:45:00",
+      "arrival": "2026-04-15T12:30:00",
+      "duration": "5г 45хв"
+    },
+    {
+      "id": "091",
+      "number": "091К",
+      "from": "Київ",
+      "to": "Одеса",
+      "departure": "2026-04-15T21:15:00",
+      "arrival": "2026-04-16T06:20:00",
+      "duration": "9г 05хв"
+    }
+  ],
+  "wagons": [
+    {
+      "id": "w1",
+      "trainId": "741",
+      "number": 5,
+      "type": "Купе",
+      "capacity": 36
+    },
+    {
+      "id": "w2",
+      "trainId": "741",
+      "number": 6,
+      "type": "Люкс",
+      "capacity": 18
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "trainId": "741",
+      "wagonId": "w1",
+      "seatNumber": 12,
+      "customerName": "Іван Іванов"
+    }
+  ]
+}

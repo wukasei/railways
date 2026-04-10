@@ -1,0 +1,52 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 14px 20px;
+  margin-bottom: 30px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.searchInput:focus {
+  border-color: #005ebb;
+  box-shadow: 0 0 0 4px rgba(0, 94, 187, 0.1);
+}
+
+.listGrid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  /* Мобільні: 1 колонка за замовчуванням */
+  grid-template-columns: 1fr; 
+}
+
+/* Планшети */
+@media (min-width: 768px) {
+  .listGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Великі екрани */
+@media (min-width: 1024px) {
+  .listGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.noResults {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.1rem;
+  margin-top: 50px;
+  grid-column: 1 / -1; /* Напис розтягується на всю ширину сітки */
+}
