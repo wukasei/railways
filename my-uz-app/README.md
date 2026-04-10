@@ -31,7 +31,7 @@
 
 ### 1. Клонування репозиторію
 ```bash
-git clone [https://github.com/your-username/my-uz-app.git](https://github.com/your-username/my-uz-app.git)
+git clone
 cd my-uz-app
 npm install
 npm start
