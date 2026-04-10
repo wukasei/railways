@@ -1,0 +1,59 @@
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  transition: all 0.2s ease;
+}
+
+.backLink:hover {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  transform: translateX(-5px); 
+}
+
+.header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.trainInfo {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  color: #9ca3af;
+  font-size: 1.2rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}

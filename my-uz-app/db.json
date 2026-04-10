@@ -37,11 +37,28 @@
   ],
   "bookings": [
     {
-      "id": 1,
       "trainId": "741",
-      "wagonId": "w1",
-      "seatNumber": 12,
-      "customerName": "Іван Іванов"
+      "wagonId": "w2",
+      "seats": [
+        1
+      ],
+      "customerName": "ЯЕН",
+      "customerPhone": "066677777777",
+      "date": "2026-04-10T11:24:44.375Z",
+      "id": "EOOvl44lSI8"
+    },
+    {
+      "trainId": "741",
+      "wagonId": "w2",
+      "seats": [
+        1
+      ],
+      "customerName": "інна",
+      "customerPhone": "0000000000",
+      "customerEmail": "bogachuk.inna@gmail.com",
+      "date": "2026-04-10T11:37:49.618Z",
+      "id": "nrDNuxnyoXA"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

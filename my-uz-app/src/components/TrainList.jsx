@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import TrainCard from "./TrainCard";
 import axios from "axios";
 import styles from "./TrainList.module.css";
+import { API_URL } from '../data/trains';
 
 function TrainList(){
     const [trains, setTrains] = useState([]);
     const [searchItem, setSearchItem] = useState("")
 
     useEffect(() => {
-        axios.get('http://localhost:3001/trains')
+        axios.get(`${API_URL}/trains`)
             .then(response => {
                 setTrains(response.data)
             })
@@ -25,7 +26,6 @@ function TrainList(){
 
     return (
         <div className={styles.container}>
-            {/* 2. Замінюємо інлайновий style на клас */}
             <input 
                 type="text"
                 placeholder="Куди їдемо? (напр. Львів)"
@@ -33,8 +33,6 @@ function TrainList(){
                 value={searchItem}
                 onChange={(e) => setSearchItem(e.target.value)}
             />
-
-            {/* 3. Додаємо клас для сітки */}
             <div className={styles.listGrid}>
                 {filteredTrains.length > 0 ? (
                     filteredTrains.map(train => (

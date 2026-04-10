@@ -1,7 +1,8 @@
+import { useNavigate } from 'react-router-dom';
 import styles from './TrainCard.module.css';
 
 const TrainCard = ({ train }) => {
-    // Твоя функція для форматування
+    const navigator = useNavigate();
     const formatDate = (dateStr) => {
         return new Date(dateStr).toLocaleString('uk-UA', {
             day: '2-digit',
@@ -10,6 +11,10 @@ const TrainCard = ({ train }) => {
             minute: '2-digit',
         });
     };
+
+    const handleBookingNavigate = () => {
+        navigator(`/booking/${train.id}`);
+    }
 
     return (
         <div className={styles.card}>
@@ -28,14 +33,13 @@ const TrainCard = ({ train }) => {
                         Відправлення: <br />
                         <strong>{formatDate(train.departure)}</strong>
                     </p>
-                    {/* Додаємо порожній div для відступу або просто клас з margin */}
                     <div style={{ marginBottom: '10px' }}></div> 
                     <p className={styles.departureTime}>
                         Прибуття: <br />
                         <strong>{formatDate(train.arrival)}</strong>
                     </p>
                 </div>
-                <button className={styles.bookingBtn}>
+                <button className={styles.bookingBtn} onClick={handleBookingNavigate}>
                     Вибрати місця
                 </button>
             </div>

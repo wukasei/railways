@@ -4,7 +4,7 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
-  min-height: 200px; /* даємо картці стабільну висоту */
+  min-height: 200px; 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid #e5e7eb;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -38,12 +38,12 @@
 }
 
 .footer {
-  margin-top: auto; /* виштовхує низ картки максимально вниз */
+  margin-top: auto; 
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 20px;
-  border-top: 1px solid #f3f4f6; /* тонка лінія для розділення */
+  border-top: 1px solid #f3f4f6; 
 }
 .departureTime {
   font-size: 0.9rem;
