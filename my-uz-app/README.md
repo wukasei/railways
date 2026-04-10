@@ -1,16 +1,37 @@
-# React + Vite
+# BookingUZ — Система бронювання залізничних квитків
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Веб-застосунок для пошуку потягів та бронювання місць, створений у межах лабораторних робіт №9–10. Проєкт імітує реальний процес вибору рейсу, вагона та конкретних місць на схемі.
 
-Currently, two official plugins are available:
+## Технологічний стек
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Frontend:** React 19 (Hooks, Context API)
+* **Збірка:** Vite
+* **Маршрутизація:** React Router v7
+* **Валідація:** Zod (схема-орієнтована валідація форм)
+* **HTTP Клієнт:** Axios
+* **Backend (Mock):** JSON-server (імітація REST API)
+* **Стилізація:** CSS Modules (модульність та ізоляція стилів)
 
-## React Compiler
+## Функціональні можливості
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Лабораторна робота №9: Список рейсів
+* Відображення доступних потягів у вигляді карток.
+* Пошук за напрямком (Звідки/Куди) та номером потяга.
+* Динамічне форматування дати та часу (uk-UA).
+* Перехід до бронювання за динамічним маршрутом `/:trainId`.
 
-## Expanding the ESLint configuration
+### Лабораторна робота №10: Бронювання та Схема
+* Інтерактивний вибір вагона (Купе, Люкс, Плацкарт).
+* Візуальна схема місць зі статусами: **Вільне**, **Обране**, **Зайняте**.
+* Синхронізація станів: перевірка зайнятих місць через сервер та локальний Context.
+* Форма бронювання з валідацією ПІБ, телефону та Email за допомогою **Zod**.
+* Збереження історії бронювань у **LocalStorage**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Як запустити проєкт
+
+### 1. Клонування репозиторію
+```bash
+git clone [https://github.com/your-username/my-uz-app.git](https://github.com/your-username/my-uz-app.git)
+cd my-uz-app
+npm install
+npm start
