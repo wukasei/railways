@@ -1,0 +1,219 @@
+{
+  "trains": [
+    {
+      "id": "741",
+      "number": "741К",
+      "from": "Київ",
+      "to": "Львів",
+      "departure": "2026-04-15T06:45:00",
+      "arrival": "2026-04-15T12:30:00",
+      "duration": "5г 45хв"
+    },
+    {
+      "id": "091",
+      "number": "091К",
+      "from": "Київ",
+      "to": "Одеса",
+      "departure": "2026-04-15T21:15:00",
+      "arrival": "2026-04-16T06:20:00",
+      "duration": "9г 05хв"
+    },
+    {
+      "id": "705",
+      "number": "705К",
+      "from": "Київ",
+      "to": "Львів",
+      "departure": "2026-04-16T06:00:00",
+      "arrival": "2026-04-16T11:05:00",
+      "duration": "5г 05хв"
+    },
+    {
+      "id": "012",
+      "number": "012Ш",
+      "from": "Львів",
+      "to": "Одеса",
+      "departure": "2026-04-16T22:24:00",
+      "arrival": "2026-04-17T08:43:00",
+      "duration": "10г 19хв"
+    },
+    {
+      "id": "015",
+      "number": "015О",
+      "from": "Харків",
+      "to": "Львів",
+      "departure": "2026-04-15T18:44:00",
+      "arrival": "2026-04-16T07:39:00",
+      "duration": "12г 55хв"
+    },
+    {
+      "id": "043",
+      "number": "043Л",
+      "from": "Київ",
+      "to": "Івано-Франківськ",
+      "departure": "2026-04-15T20:12:00",
+      "arrival": "2026-04-16T07:02:00",
+      "duration": "10г 50хв"
+    },
+    {
+      "id": "715",
+      "number": "715Л",
+      "from": "Київ",
+      "to": "Перемишль",
+      "departure": "2026-04-16T11:01:00",
+      "arrival": "2026-04-16T20:25:00",
+      "duration": "9г 24хв"
+    }
+  ],
+  "wagons": [
+    {
+      "id": "w1",
+      "trainId": "741",
+      "number": 5,
+      "type": "Купе",
+      "capacity": 36
+    },
+    {
+      "id": "w2",
+      "trainId": "741",
+      "number": 6,
+      "type": "Люкс",
+      "capacity": 18
+    },
+    {
+      "id": "w3",
+      "trainId": "091",
+      "number": 1,
+      "type": "Плацкарт",
+      "capacity": 54
+    },
+    {
+      "id": "w4",
+      "trainId": "091",
+      "number": 2,
+      "type": "Купе",
+      "capacity": 36
+    },
+    {
+      "id": "w5",
+      "trainId": "705",
+      "number": 1,
+      "type": "1 клас",
+      "capacity": 60
+    },
+    {
+      "id": "w6",
+      "trainId": "705",
+      "number": 2,
+      "type": "2 клас",
+      "capacity": 80
+    },
+    {
+      "id": "w7",
+      "trainId": "012",
+      "number": 10,
+      "type": "Купе",
+      "capacity": 36
+    },
+    {
+      "id": "w8",
+      "trainId": "015",
+      "number": 3,
+      "type": "Люкс",
+      "capacity": 18
+    },
+    {
+      "id": "w9",
+      "trainId": "043",
+      "number": 8,
+      "type": "Плацкарт",
+      "capacity": 54
+    }
+  ],
+  "bookings": [
+    {
+      "trainId": "741",
+      "wagonId": "w2",
+      "seats": [
+        1
+      ],
+      "customerName": "ЯЕН",
+      "customerPhone": "066677777777",
+      "date": "2026-04-10T11:24:44.375Z",
+      "id": "EOOvl44lSI8"
+    },
+    {
+      "trainId": "741",
+      "wagonId": "w1",
+      "seats": [
+        1,
+        6
+      ],
+      "customerName": "петя",
+      "customerPhone": "06672919373",
+      "customerEmail": "bhuk.inna@gmail.com",
+      "date": "2026-05-09T10:01:40.416Z",
+      "id": "YWaGde1yDwY"
+    },
+    {
+      "trainId": "741",
+      "wagonId": "w2",
+      "seats": [
+        11
+      ],
+      "customerName": "соня",
+      "customerPhone": "093475847548",
+      "customerEmail": "kdfldfk@gmail.com",
+      "date": "2026-05-09T10:11:40.974Z",
+      "id": "5Ng_EtLkLp4"
+    },
+    {
+      "trainId": "741",
+      "wagonId": "w2",
+      "seats": [
+        14
+      ],
+      "customerName": "соня",
+      "customerPhone": "0737283728",
+      "customerEmail": "inna@gmail.com",
+      "date": "2026-05-09T10:12:22.495Z",
+      "id": "MmbrpWT6srU"
+    },
+    {
+      "trainId": "012",
+      "wagonId": "w7",
+      "seats": [
+        14
+      ],
+      "customerName": "ЧУРКА",
+      "customerPhone": "07638478347",
+      "customerEmail": "na@gmail.com",
+      "date": "2026-05-09T10:14:57.829Z",
+      "id": "lK0QbES31_w"
+    },
+    {
+      "trainId": "043",
+      "wagonId": "w9",
+      "seats": [
+        3
+      ],
+      "customerName": "ЛІВОЛФ",
+      "customerPhone": "0292490242",
+      "customerEmail": "bogachuk.inna@gmail.com",
+      "date": "2026-05-09T10:17:42.798Z",
+      "id": "RjftOMflMtY"
+    },
+    {
+      "trainId": "043",
+      "wagonId": "w9",
+      "seats": [
+        6
+      ],
+      "customerName": "ІВІАІАВ",
+      "customerPhone": "029340294024",
+      "customerEmail": "bogachuk.inna@gmail.com",
+      "date": "2026-05-09T10:18:51.982Z",
+      "id": "mdZ3GoUprp8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
